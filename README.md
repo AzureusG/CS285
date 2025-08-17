@@ -4,5 +4,5 @@ Project: Berkeley CS285 Deep Reinforcement Learning, Decision Making, and Contro
 
 Lesson time: Fall 2023
 
-Repository: Personal Homework
+Repository: Homeworks
 
