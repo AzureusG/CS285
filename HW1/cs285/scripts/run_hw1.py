@@ -5,10 +5,14 @@ Functions to edit:
     1. run_training_loop
 """
 
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+
 import pickle
 import os
 import time
-import gym
+import gymnasium as gym
 
 import numpy as np
 import torch
@@ -133,7 +137,7 @@ def run_training_loop(params):
             # HINT: use utils.sample_trajectories
             # TODO: implement missing parts of utils.sample_trajectory
             paths, envsteps_this_batch = utils.sample_trajectories(
-                env, expert_policy, params['batch_size'], params['ep_len'])
+                env, actor, params['batch_size'], params['ep_len'])
 
             # relabel the collected obs with actions from a provided expert policy
             if params['do_dagger']:
@@ -161,8 +165,8 @@ def run_training_loop(params):
           # HINT3: return corresponding data points from each array (i.e., not different indices from each array)
           # for imitation learning, we only need observations and actions.  
           indices = np.random.permutation(len(replay_buffer))[:params['train_batch_size']]
-          ob_batch = replay_buffer.observations[indices]
-          ac_batch = replay_buffer.actions[indices]
+          ob_batch = replay_buffer.obs[indices]
+          ac_batch = replay_buffer.acs[indices]
 
           # use the sampled data to train an agent
           train_log = actor.update(ob_batch, ac_batch)

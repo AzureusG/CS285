@@ -129,12 +129,14 @@ class MLPPolicySL(BasePolicy, nn.Module, metaclass=abc.ABCMeta):
         # through it. For example, you can return a torch.FloatTensor. You can also
         # return more flexible objects, such as a
         # `torch.distributions.Distribution` object. It's up to you!
-        mean = self.mean_net(observation)
-        logstd = self.logstd.expand_as(mean)
-        std = torch.exp(logstd)
-        dist = distributions.Normal(mean, std)
-        action = dist.sample()
-        return action
+        if not isinstance(observation, torch.Tensor):
+            observation = ptu.from_numpy(observation) 
+        observation = observation.float().to(ptu.device)
+        action_mean = self.mean_net(observation)
+        action_std = torch.exp(self.logstd)
+        action_distribution = distributions.Normal(action_mean,action_std)
+        sampled_action = action_distribution.rsample()
+        return sampled_action
 
     def update(self, observations, actions):
         """
@@ -146,12 +148,17 @@ class MLPPolicySL(BasePolicy, nn.Module, metaclass=abc.ABCMeta):
             dict: 'Training Loss': supervised learning loss
         """
         # TODO: update the policy and return the loss
+        if not isinstance(observations, torch.Tensor):
+            observations = ptu.from_numpy(observations)
+        if not isinstance(actions, torch.Tensor):
+            actions = ptu.from_numpy(actions)
+        observations = observations.float()
+        actions = actions.float()
         loss = F.mse_loss(self.forward(observations), actions)
         self.optimizer.zero_grad()
         loss.backward()
         self.optimizer.step()
         # You can add extra logging information here, but keep this line
-        ptu.clip_gradients(self.mean_net, 1.0)
         return {
             'Training Loss': ptu.to_numpy(loss)
         }
