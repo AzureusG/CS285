@@ -81,10 +81,10 @@ def run_training_loop(args):
 
         # TODO: train the agent using the sampled trajectories and the agent's update function
         train_info: dict = agent.update(
-            obs=np.concatenate(trajs_dict["observation"]),
-            actions=np.concatenate(trajs_dict["action"]),
-            rewards=trajs_dict["reward"],
-            terminals=np.concatenate(trajs_dict["terminal"]),
+            trajs_dict['observation'],
+            trajs_dict['action'],
+            trajs_dict['reward'],
+            trajs_dict['terminal']
         )  
 
         if itr % args.scalar_log_freq == 0:
@@ -105,6 +105,7 @@ def run_training_loop(args):
                 ]
 
             # perform the logging
+            
             for key, value in logs.items():
                 print("{} : {}".format(key, value))
                 logger.log_scalar(value, key, itr)

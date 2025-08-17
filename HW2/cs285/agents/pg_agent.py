@@ -155,10 +155,11 @@ class PGAgent(nn.Module):
                 advantages = advantages[:-1]
 
         # TODO: normalize the advantages to have a mean of zero and a standard deviation of one within the batch
-        advantages = ptu.normalize_np_array(advantages,mean=0,std=1)
         if self.normalize_advantages:
-            pass
-
+            mean = np.mean(advantages)
+            # add a small constant to avoid division by zero
+            std = np.std(advantages) + 1e-8
+            advantages = (advantages - mean) / std
         return advantages
 
     def _discounted_return(self, rewards: Sequence[float]) -> Sequence[float]:
@@ -169,7 +170,13 @@ class PGAgent(nn.Module):
         Note that all entries of the output list should be the exact same because each sum is from 0 to T (and doesn't
         involve t)!
         """
-        return None
+        total_return = sum(
+            [self.gamma**t * rewards[t] for t in range(len(rewards))]
+        )
+
+        # Create a list with the total_return value for each time step
+        discounted_returns = [total_return] * len(rewards)
+        return discounted_returns
 
 
     def _discounted_reward_to_go(self, rewards: Sequence[float]) -> Sequence[float]:
@@ -177,4 +184,13 @@ class PGAgent(nn.Module):
         Helper function which takes a list of rewards {r_0, r_1, ..., r_t', ... r_T} and returns a list where the entry
         in each index t' is sum_{t'=t}^T gamma^(t'-t) * r_{t'}.
         """
-        return None
+        n = len(rewards)
+        discounted_rewards_to_go = [0] * n
+
+        for t in range(n):
+            reward_to_go = 0
+            for t_prime in range(t, n):
+                reward_to_go += self.gamma ** (t_prime - t) * rewards[t_prime]
+            discounted_rewards_to_go[t] = reward_to_go
+
+        return discounted_rewards_to_go
