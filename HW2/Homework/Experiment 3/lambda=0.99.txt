@@ -1,0 +1,448 @@
+
+********** Iteration 260 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -124.56380462646484
+Eval_StdReturn : 22.779285430908203
+Eval_MaxReturn : -95.71072387695312
+Eval_MinReturn : -168.81646728515625
+Eval_AverageEpLen : 76.16666666666667
+Train_AverageReturn : -124.3524169921875
+Train_StdReturn : 32.13821792602539
+Train_MaxReturn : -8.135162353515625
+Train_MinReturn : -184.42617797851562
+Train_AverageEpLen : 71.92857142857143
+actor_info : {'Actor Loss': array(-188.14554, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(606.7914, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(603.9552, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(601.2039, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(598.7001, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(596.5404, dtype=float32)}
+Train_EnvstepsSoFar : 532224
+TimeSinceStart : 1090.9876549243927
+Done logging...
+
+
+
+********** Iteration 261 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -120.51966857910156
+Eval_StdReturn : 40.47060775756836
+Eval_MaxReturn : -25.38695526123047
+Eval_MinReturn : -159.23214721679688
+Eval_AverageEpLen : 63.42857142857143
+Train_AverageReturn : -124.23356628417969
+Train_StdReturn : 53.161865234375
+Train_MaxReturn : 13.674461364746094
+Train_MinReturn : -199.8570098876953
+Train_AverageEpLen : 66.93333333333334
+actor_info : {'Actor Loss': array(-141.67552, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(1427.0005, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(1425.7223, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(1424.7936, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(1424.1605, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(1423.7627, dtype=float32)}
+Train_EnvstepsSoFar : 534232
+TimeSinceStart : 1094.1361198425293
+Done logging...
+
+
+
+********** Iteration 262 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -137.75762939453125
+Eval_StdReturn : 29.97907829284668
+Eval_MaxReturn : -98.03305053710938
+Eval_MinReturn : -179.93968200683594
+Eval_AverageEpLen : 66.42857142857143
+Train_AverageReturn : -128.536376953125
+Train_StdReturn : 30.122312545776367
+Train_MaxReturn : -14.938560485839844
+Train_MinReturn : -180.18917846679688
+Train_AverageEpLen : 68.06666666666666
+actor_info : {'Actor Loss': array(-211.1579, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(374.07318, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(374.567, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(374.11517, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(372.94055, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(371.2891, dtype=float32)}
+Train_EnvstepsSoFar : 536274
+TimeSinceStart : 1097.0010797977448
+Done logging...
+
+
+
+********** Iteration 263 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -140.96249389648438
+Eval_StdReturn : 17.748512268066406
+Eval_MaxReturn : -107.0989990234375
+Eval_MinReturn : -159.60147094726562
+Eval_AverageEpLen : 66.85714285714286
+Train_AverageReturn : -128.41966247558594
+Train_StdReturn : 34.546173095703125
+Train_MaxReturn : -13.409385681152344
+Train_MinReturn : -184.92234802246094
+Train_AverageEpLen : 68.03333333333333
+actor_info : {'Actor Loss': array(-163.46075, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(707.8434, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(707.27344, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(706.8602, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(706.5792, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(706.40375, dtype=float32)}
+Train_EnvstepsSoFar : 538315
+TimeSinceStart : 1100.0676333904266
+Done logging...
+
+
+
+********** Iteration 264 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -131.6731719970703
+Eval_StdReturn : 13.877564430236816
+Eval_MaxReturn : -108.88623046875
+Eval_MinReturn : -155.87725830078125
+Eval_AverageEpLen : 65.14285714285714
+Train_AverageReturn : -132.48342895507812
+Train_StdReturn : 43.078433990478516
+Train_MaxReturn : 3.626156806945801
+Train_MinReturn : -206.7568359375
+Train_AverageEpLen : 73.71428571428571
+actor_info : {'Actor Loss': array(-234.85747, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(1006.9768, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(1007.12714, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(1007.231, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(1007.28253, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(1007.28467, dtype=float32)}
+Train_EnvstepsSoFar : 540379
+TimeSinceStart : 1103.351128578186
+Done logging...
+
+
+
+********** Iteration 265 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -101.66580963134766
+Eval_StdReturn : 66.1063232421875
+Eval_MaxReturn : 39.04478454589844
+Eval_MinReturn : -150.0289306640625
+Eval_AverageEpLen : 67.5
+Train_AverageReturn : -120.80424499511719
+Train_StdReturn : 31.32341194152832
+Train_MaxReturn : -29.660537719726562
+Train_MinReturn : -185.31692504882812
+Train_AverageEpLen : 69.55172413793103
+actor_info : {'Actor Loss': array(-130.97012, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(464.19687, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(462.76437, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(460.66556, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(458.20975, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(455.6611, dtype=float32)}
+Train_EnvstepsSoFar : 542396
+TimeSinceStart : 1106.391984462738
+Done logging...
+
+
+
+********** Iteration 266 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -122.50289154052734
+Eval_StdReturn : 16.838523864746094
+Eval_MaxReturn : -89.9171371459961
+Eval_MinReturn : -142.76377868652344
+Eval_AverageEpLen : 67.42857142857143
+Train_AverageReturn : -140.79588317871094
+Train_StdReturn : 32.19571304321289
+Train_MaxReturn : -85.69206237792969
+Train_MinReturn : -208.7518310546875
+Train_AverageEpLen : 75.4074074074074
+actor_info : {'Actor Loss': array(-170.74098, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(414.9853, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(414.93137, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(410.6491, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(403.3629, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(394.30328, dtype=float32)}
+Train_EnvstepsSoFar : 544432
+TimeSinceStart : 1109.5152158737183
+Done logging...
+
+
+
+********** Iteration 267 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -118.54242706298828
+Eval_StdReturn : 27.629749298095703
+Eval_MaxReturn : -75.97769927978516
+Eval_MinReturn : -147.46231079101562
+Eval_AverageEpLen : 70.0
+Train_AverageReturn : -141.91116333007812
+Train_StdReturn : 42.43209457397461
+Train_MaxReturn : -27.456083297729492
+Train_MinReturn : -272.9808044433594
+Train_AverageEpLen : 72.35714285714286
+actor_info : {'Actor Loss': array(-210.13144, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(819.8288, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(804.2001, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(788.5746, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(774.0393, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(761.28937, dtype=float32)}
+Train_EnvstepsSoFar : 546458
+TimeSinceStart : 1112.6491780281067
+Done logging...
+
+
+
+********** Iteration 268 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -116.2344970703125
+Eval_StdReturn : 14.9684419631958
+Eval_MaxReturn : -94.20741271972656
+Eval_MinReturn : -138.4691925048828
+Eval_AverageEpLen : 69.66666666666667
+Train_AverageReturn : -118.12445068359375
+Train_StdReturn : 43.70895004272461
+Train_MaxReturn : 1.4658432006835938
+Train_MinReturn : -169.76939392089844
+Train_AverageEpLen : 73.28571428571429
+actor_info : {'Actor Loss': array(-180.0333, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(1291.9786, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(1299.9974, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(1296.1515, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(1283.1069, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(1263.8774, dtype=float32)}
+Train_EnvstepsSoFar : 548510
+TimeSinceStart : 1115.7947998046875
+Done logging...
+
+
+
+********** Iteration 269 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -122.83683013916016
+Eval_StdReturn : 14.622573852539062
+Eval_MaxReturn : -107.33321380615234
+Eval_MinReturn : -147.51608276367188
+Eval_AverageEpLen : 71.0
+Train_AverageReturn : -129.94384765625
+Train_StdReturn : 28.057966232299805
+Train_MaxReturn : -31.720375061035156
+Train_MinReturn : -171.94989013671875
+Train_AverageEpLen : 72.46428571428571
+actor_info : {'Actor Loss': array(-121.92613, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(519.17267, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(514.00916, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(510.52878, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(508.38147, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(507.22684, dtype=float32)}
+Train_EnvstepsSoFar : 550539
+TimeSinceStart : 1118.4965937137604
+Done logging...
+
+
+
+********** Iteration 270 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -116.3670883178711
+Eval_StdReturn : 45.71318817138672
+Eval_MaxReturn : -22.51190185546875
+Eval_MinReturn : -159.32083129882812
+Eval_AverageEpLen : 79.66666666666667
+Train_AverageReturn : -133.9213409423828
+Train_StdReturn : 49.07244873046875
+Train_MaxReturn : 33.14421081542969
+Train_MinReturn : -281.26861572265625
+Train_AverageEpLen : 72.57142857142857
+actor_info : {'Actor Loss': array(-164.54759, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(1517.1282, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(1518.7631, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(1519.7404, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(1520.0513, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(1519.7828, dtype=float32)}
+Train_EnvstepsSoFar : 552571
+TimeSinceStart : 1121.3999772071838
+Done logging...
+
+
+
+********** Iteration 271 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -162.6198272705078
+Eval_StdReturn : 25.72854995727539
+Eval_MaxReturn : -125.03131866455078
+Eval_MinReturn : -191.89178466796875
+Eval_AverageEpLen : 77.66666666666667
+Train_AverageReturn : -134.71937561035156
+Train_StdReturn : 31.698163986206055
+Train_MaxReturn : -82.6925048828125
+Train_MinReturn : -201.931884765625
+Train_AverageEpLen : 70.48275862068965
+actor_info : {'Actor Loss': array(-119.95709, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(380.27084, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(377.96515, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(375.07138, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(371.94278, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(368.86194, dtype=float32)}
+Train_EnvstepsSoFar : 554615
+TimeSinceStart : 1123.9608240127563
+Done logging...
+
+
+
+********** Iteration 272 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -123.61255645751953
+Eval_StdReturn : 22.068870544433594
+Eval_MaxReturn : -85.07160949707031
+Eval_MinReturn : -148.1011505126953
+Eval_AverageEpLen : 72.33333333333333
+Train_AverageReturn : -127.78544616699219
+Train_StdReturn : 49.8963508605957
+Train_MaxReturn : 26.263572692871094
+Train_MinReturn : -279.966552734375
+Train_AverageEpLen : 70.55172413793103
+actor_info : {'Actor Loss': array(-167.78839, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(1411.9724, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(1412.8467, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(1413.5068, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(1413.8901, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(1413.997, dtype=float32)}
+Train_EnvstepsSoFar : 556661
+TimeSinceStart : 1126.7849342823029
+Done logging...
+
+
+
+********** Iteration 273 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -128.57659912109375
+Eval_StdReturn : 43.01678466796875
+Eval_MaxReturn : -41.0369758605957
+Eval_MinReturn : -170.83291625976562
+Eval_AverageEpLen : 75.16666666666667
+Train_AverageReturn : -132.5724334716797
+Train_StdReturn : 28.000314712524414
+Train_MaxReturn : -37.08690643310547
+Train_MinReturn : -173.0360107421875
+Train_AverageEpLen : 75.25925925925925
+actor_info : {'Actor Loss': array(-116.080574, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(431.10825, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(431.07007, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(431.02597, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(430.9807, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(430.9378, dtype=float32)}
+Train_EnvstepsSoFar : 558693
+TimeSinceStart : 1129.7236540317535
+Done logging...
+
+
+
+********** Iteration 274 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -124.48798370361328
+Eval_StdReturn : 38.4283447265625
+Eval_MaxReturn : -40.02556610107422
+Eval_MinReturn : -152.19488525390625
+Eval_AverageEpLen : 68.0
+Train_AverageReturn : -148.17117309570312
+Train_StdReturn : 55.10927200317383
+Train_MaxReturn : -70.47915649414062
+Train_MinReturn : -344.77337646484375
+Train_AverageEpLen : 71.24137931034483
+actor_info : {'Actor Loss': array(-207.48526, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(1376.7479, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(1363.5028, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(1342.2803, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(1316.5457, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(1289.2957, dtype=float32)}
+Train_EnvstepsSoFar : 560759
+TimeSinceStart : 1132.4994659423828
+Done logging...
+
+
+
+********** Iteration 275 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -129.8010711669922
+Eval_StdReturn : 7.521533489227295
+Eval_MaxReturn : -116.86021423339844
+Eval_MinReturn : -142.1698455810547
+Eval_AverageEpLen : 64.28571428571429
+Train_AverageReturn : -135.53738403320312
+Train_StdReturn : 48.59285354614258
+Train_MaxReturn : 24.205909729003906
+Train_MinReturn : -281.6104431152344
+Train_AverageEpLen : 71.5
+actor_info : {'Actor Loss': array(-222.00078, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(1307.5857, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(1312.8041, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(1317.3484, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(1320.5459, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(1322.1753, dtype=float32)}
+Train_EnvstepsSoFar : 562761
+TimeSinceStart : 1135.200083732605
+Done logging...
+
+
+
+********** Iteration 276 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -117.56490325927734
+Eval_StdReturn : 38.22455596923828
+Eval_MaxReturn : -80.4771728515625
+Eval_MinReturn : -176.03701782226562
+Eval_AverageEpLen : 72.83333333333333
+Train_AverageReturn : -140.24899291992188
+Train_StdReturn : 28.251018524169922
+Train_MaxReturn : -96.87776184082031
+Train_MinReturn : -202.92276000976562
+Train_AverageEpLen : 70.06896551724138
+actor_info : {'Actor Loss': array(-144.12709, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(287.72293, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(287.7345, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(287.74362, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(287.7494, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(287.7515, dtype=float32)}
+Train_EnvstepsSoFar : 564793
+TimeSinceStart : 1138.0737524032593
+Done logging...
+
+
+
+********** Iteration 277 ************
+
+Collecting data for eval...
+Eval_AverageReturn : -117.13619995117188
+Eval_StdReturn : 42.6077995300293
+Eval_MaxReturn : -39.75878143310547
+Eval_MinReturn : -170.40957641601562
+Eval_AverageEpLen : 75.66666666666667
+Train_AverageReturn : -138.6147003173828
+Train_StdReturn : 44.48556137084961
+Train_MaxReturn : -56.715702056884766
+Train_MinReturn : -330.3314208984375
+Train_AverageEpLen : 69.41379310344827
+actor_info : {'Actor Loss': array(-195.56557, dtype=float32)}
+critic_update_step0 : {'Baseline Loss': array(916.4837, dtype=float32)}
+critic_update_step1 : {'Baseline Loss': array(916.4323, dtype=float32)}
+critic_update_step2 : {'Baseline Loss': array(916.3543, dtype=float32)}
+critic_update_step3 : {'Baseline Loss': array(916.26184, dtype=float32)}
+critic_update_step4 : {'Baseline Loss': array(916.16504, dtype=float32)}
+Train_EnvstepsSoFar : 566806
+TimeSinceStart : 1140.8374502658844
+Done logging...

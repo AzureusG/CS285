@@ -67,9 +67,11 @@ class PGAgent(nn.Module):
         # TODO: flatten the lists of arrays into single arrays, so that the rest of the code can be written in a vectorized
         # way. obs, actions, rewards, terminals, and q_values should all be arrays with a leading dimension of `batch_size`
         # beyond this point.
-        obs, actions, rewards, terminals, q_values = [
-            np.concatenate(x) for x in [obs, actions, rewards, terminals, q_values]
-        ]
+        obs = np.concatenate(obs)
+        actions = np.concatenate(actions)
+        rewards = np.concatenate(rewards)
+        terminals = np.concatenate(terminals)
+        q_values = np.concatenate(q_values)
 
         # step 2: calculate advantages from Q values
         advantages: np.ndarray = self._estimate_advantage(
@@ -86,9 +88,9 @@ class PGAgent(nn.Module):
         if self.critic is not None:
             critic_info:dict={}
             # TODO: perform `self.baseline_gradient_steps` updates to the critic/baseline network
-            for _ in range(self.baseline_gradient_steps):
+            for _step in range(self.baseline_gradient_steps):
                 self.critic.update(obs, q_values)
-                info['critic_info'] = critic_info
+                critic_info['critic_update_step{}'.format(_step)] = self.critic.update(obs, q_values)
 
             info.update(critic_info)
 
@@ -140,7 +142,6 @@ class PGAgent(nn.Module):
                 # HINT: append a dummy T+1 value for simpler recursive calculation
                 values = np.append(values, [0])
                 advantages = np.zeros(batch_size + 1)
-                next=0
 
                 for i in reversed(range(batch_size)):
                     # TODO: recursively compute advantage estimates starting from timestep T.
@@ -148,8 +149,6 @@ class PGAgent(nn.Module):
                     # trajectory, and 0 otherwise.
                     delta_t=q_values[i] - values[i] + self.gamma * values[i+1] * (1-terminals[i])
                     advantages[i] = delta_t + self.gamma * self.gae_lambda * advantages[i + 1] * (1 - terminals[i])
-                    next=advantages[i]
-                    pass
 
                 # remove dummy advantage
                 advantages = advantages[:-1]
