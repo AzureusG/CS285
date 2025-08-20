@@ -25,9 +25,11 @@ class Reacher7DOFEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         self.target_sid = -1
 
         curr_dir = os.path.dirname(os.path.abspath(__file__))
+
+        xml_path = os.path.join(curr_dir, "assets", "sawyer.xml")
         mujoco_env.MujocoEnv.__init__(
             self,
-            curr_dir + "/assets/sawyer.xml",
+            xml_path,
             2,
             observation_space=observation_space,
             **kwargs
