@@ -1,6 +1,9 @@
 import time
 import argparse
 import pickle
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
 from cs285.agents import agents as agent_types
 from cs285.envs import Pointmass
